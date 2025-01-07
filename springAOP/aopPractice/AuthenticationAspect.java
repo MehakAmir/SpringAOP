@@ -11,7 +11,7 @@ public class AuthenticationAspect {
     public void authenticationPointcut(){
 
     }
-@Pointcut("within(aopPractice.ShopingCart.*)")
+@Pointcut("execution(* aopPractice.ShopingCart.checkout(..))")
     public void authorizationPointcut(){
 
     }
